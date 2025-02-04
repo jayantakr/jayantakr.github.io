@@ -9,7 +9,7 @@ body {
 
 }
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,7 +30,7 @@ body {
 }
 .navbar a {
     display: inline-block;
-    font-size: 25px;
+    font-size: 15px;
     color: #4a0202;
     text-decoration: none;
     font-weight: 500;
@@ -65,12 +65,11 @@ body {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
-
+    color: rgb(12, 102, 180);
 }
 
 .home-content p {
     font-size: 20px;
-    
 }
 .home-sci a {
     display: inline-flex;
@@ -120,6 +119,34 @@ body {
     bottom: 0;
 
 }
+.rank-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.rank-box {
+    color: rgb(7, 118, 214);
+    font-size: 24px;
+    padding: 15px;
+    width: 140px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rank-number {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rank-desc {
+    font-size: 10px;
+    margin: 5px 0 0;
+    color: #081b29;
+}
 
 #services {
     color: rgb(12, 102, 180);
@@ -132,11 +159,10 @@ body {
     text-align: center;
     font-size: 30px;
     padding-bottom: 5px;
-   
 }
 
 .container {
-    padding: 90px;
+    padding: 20px;
 
 }
 
@@ -145,7 +171,6 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
-
 }
 
 .services-list div {
@@ -156,7 +181,6 @@ body {
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
-    
 }
 
 .services-list div i {
@@ -169,16 +193,59 @@ body {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
-    
+    color: #000;
 }
 .services-list div h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 12px;
-    
+}
+.services-list div p {
+    color: #000;
 }
 .sub-title {
     color: rgb(12, 102, 180);
+}
+.experience-education-box {
+    background: rgb(214, 235, 244);
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: #a5e5ed;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: nowrap; /* Ensures both columns stay in one row */
+    align-items: flex-start; /* Aligns both sections to the top */
+}
+
+.experience, .education {
+    width: 50%;
+    text-align: left;
+}
+
+.experience h3, .education h3 {
+    color: #23038e;
+    padding-bottom: 5px;
+}
+
+.experience ul, .education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.experience ul li, .education ul li {
+    background: #ffffff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.experience ul li span,.education ul li span {
+    color: #293df4;
+    font-size: 15px;
 }
 .skills-section {
     padding: 0 50px;
@@ -334,16 +401,18 @@ body {
 }
 .contact-form form {
     position: relative;
+    box-shadow: 0 0 20px #d3d3d3;
 }
 .contact-form form input,textarea {
     border: none;
     outline: none;
     width: 90%;
     padding: 18px;
-    background: #555557;
+    background: white;
     color: #000;
     font-size: 1rem;
     font-weight: 600;
+    border: 1.5px solid #110a0a;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -376,3 +445,42 @@ body {
     padding: 10px;
     border-radius: 0,5rem;
 }
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .experience-education-box {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .experience, .education {
+        width: 100%;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+    }
+
+    .rank-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .rank-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .project {
+        width: 100%;
+    }
+}
+
