@@ -439,6 +439,25 @@ body {
     color: #081b29;
     background-color: blue;
 }
+
+@media (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-form, .contact-text {
+        width: 100%;
+    }
+    .contact-form {
+        width: 150px;
+    }
+    .contact-text h2 {
+        font-size: 30px;
+        line-height: 1;
+        text-align: center;
+    
+    }
+}
 .last-text p {
     width: 100%;
     text-align: center;
