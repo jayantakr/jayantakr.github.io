@@ -30,7 +30,7 @@ body {
 }
 .navbar a {
     display: inline-block;
-    font-size: 15px;
+    font-size: 20px;
     color: #4a0202;
     text-decoration: none;
     font-weight: 500;
@@ -511,6 +511,6 @@ body {
         height: 100%;
         margin: 0;
         padding: 0%;
-        overflow: hidden;
+        overflow: auto;
     }
 }
