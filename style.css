@@ -123,8 +123,8 @@ body {
 @media screen and (max-width: 600px) {
     .image img {
         height: auto;
-        left: 400px;
-        bottom: 300px;
+        left: 195px;
+        bottom: -20px;
     }
 }
 .rank-container {
