@@ -57,19 +57,19 @@ body {
     max-width: 600px;
 }
 .home-content h3 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
 
 }
 .home-content h1 {
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 700;
     margin: -3px 0;
     color: rgb(12, 102, 180);
 }
 
 .home-content p {
-    font-size: 20px;
+    font-size: 14px;
 }
 .home-sci a {
     display: inline-flex;
@@ -111,18 +111,25 @@ body {
     margin: -12px 0 0 0;
 }
 
-.image {
-    width: 20%;
-    height: 77%;
+.image img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     position: absolute;
     right: 100px;
+    border-radius: 10px;
     bottom: 0;
-
+}
+@media (max-width: 768px) {
+    .image img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
 }
 .rank-container {
     display: flex;
     justify-content: center;
-    gap: 28px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
@@ -145,8 +152,11 @@ body {
 .rank-desc {
     font-size: 10px;
     margin: 5px 0 0;
-    color: #081b29;
+    color:#081b29;
+
 }
+
+
 
 #services {
     color: rgb(12, 102, 180);
@@ -446,11 +456,33 @@ body {
     border-radius: 0,5rem;
 }
 @media (max-width: 768px) {
-    nav ul li {
-        display: block;
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav .navbar {
         margin: 5px 0;
     }
-
+    nav .navbar a {
+        display: block;
+        margin-bottom: 10px;
+       }
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-list {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    .cells {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cells {
+        width: 90%;
+        margin-bottom: 15px;
+    }
     .experience-education-box {
         flex-direction: column;
         width: 90%;
@@ -458,15 +490,6 @@ body {
 
     .experience, .education {
         width: 100%;
-    }
-
-    .project-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        width: 80%;
     }
 
     .rank-container {
@@ -478,9 +501,4 @@ body {
     .rank-container {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .project {
-        width: 100%;
-    }
 }
-
