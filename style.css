@@ -443,7 +443,7 @@ body {
 @media (max-width: 600px) {
     .contact {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
     .contact-form, .contact-text {
         width: 100%;
@@ -452,10 +452,16 @@ body {
         width: 150px;
     }
     .contact-text h2 {
-        font-size: 30px;
+        font-size: 25px;
         line-height: 1;
-        text-align: center;
+        text-align: left;
     
+    }
+    .contact-list i {
+        display: inline-block;
+        font-size: 20px;
+        text-align: left;
+        transition: all .4s ease;
     }
 }
 .last-text p {
