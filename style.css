@@ -195,13 +195,28 @@ body {
     font-weight: 13px;
     border-right: 10px;
     border-radius: 20px;
+    text-align: center;
     transition: background 0.5s, transform 0.5s;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 10px;
+    transition: all 0.4s ease;
+}
+
+.services-list div:hover {
+    background: #4070f4;
+    color: #fff;
 }
 
 .services-list div i {
     font-size: 50px;
     margin-bottom: 10px;
 
+}
+
+.services-list div i:hover {
+    background: #fff;
+    color: #293df4;
 }
 
 .services-list div h2 {
