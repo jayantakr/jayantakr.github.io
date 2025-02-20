@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jayantakr.github.io/sitemap.xml
